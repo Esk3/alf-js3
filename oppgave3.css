@@ -1,0 +1,26 @@
+.svar.voksen :not(.voksen),
+.svar.barn :not(.barn),
+.svar.pensjon :not(.pensjon),
+.svar:not(.voksen):not(.barn):not(.pensjon) {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.utfordring form {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}

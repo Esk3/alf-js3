@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/oppgave3.css">
+  <script src="oppgave3.js" type="module"> </script>
+</head>
+
+<body>
+
+  <main>
+    <div>
+
+      <form>
+        <input type="number" name="alder" placeholder="alder">
+        <input type="submit" value="Submit">
+      </form>
+      <div class="svar">
+        <p class="pensjon">Du er pensjonist og får 20% rabatt.</p>
+        <p class="barn">Du er barn og får 50% rabbat.</p>
+        <p class="voksen">Du er voksen og får normal pris.</p>
+        <p class="barn voksen pensjon">Fergebilletten koster
+          <span class="barn">50</span>
+          <span class="voksen">100</span>
+          <span class="pensjon">80</span>
+          kr for en tur, for en passansjer som er
+          <span class="alder barn voksen pensjon"></span>
+          år gammel. God tur!
+        </p>
+      </div>
+    </div>
+
+    <div class="utfordring">
+      <form>
+        <input type="number" name="barn" placeholder="barn">
+        <input type="number" name="voksen" placeholder="voksen">
+        <input type="number" name="pensjon" placeholder="pensjon">
+        <input type="submit" value="Submit">
+      </form>
+      <table class="skjult">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Rabbat</th>
+            <th>Pris kr</th>
+            <th>Mendge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="barn">
+            <th>Barn</th>
+            <th>50%</th>
+            <th class="pris">50</th>
+            <td></td>
+          </tr>
+          <tr class="voksen">
+            <th>Voksen</th>
+            <th>0%</th>
+            <th class="pris">100</th>
+            <td></td>
+          </tr>
+          <tr class="pensjon">
+            <th>Pensjon</th>
+            <th>20%</th>
+            <th class="pris">80</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="skjult pris">Total Pris: <span></span></p>
+    </div>
+  </main>
+
+</body>
+
+</html>
